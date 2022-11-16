@@ -12,7 +12,7 @@ class UserProfile(models.Model):
     delivery information and order history
     """
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    phone_number = models.CharField(max_length=20, null=True, blank=True)
+    default_phone_number = models.CharField(max_length=20, null=True, blank=True)
     default_country = CountryField(
         blank_label='Country *', null=True, blank=True)
     default_postcode = models.CharField(max_length=20, null=True, blank=True)
