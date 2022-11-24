@@ -176,7 +176,7 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-if 'USE_AWS' is os.environ:
+if 'USE_AWS' in os.environ:
     # AWS bucket config
     AWS_STORAGE_BUCKET_NAME = 'ecommercewalkthrough'
     AWS_S3_REGION_NAME = 'EU (Ireland) eu-west-1'
